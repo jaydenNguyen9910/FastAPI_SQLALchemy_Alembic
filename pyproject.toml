@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "fastapi-sqlalchemy-alembic"
+version = "0.1.0"
+description = ""
+authors = ["Nguyen Minh Tri <nguyenminhtri11101999@gmail.com>"]
+readme = "README.md"
+packages = [{include = "fastapi_sqlalchemy_alembic"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+alembic = "^1.11.2"
+fastapi = "^0.101.0"
+fastapi-users = {extras = ["oauth", "sqlalchemy"], version = "^12.1.1"}
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+pydantic-settings = "^2.0.2"
+asyncpg = "^0.28.0"
+psycopg2-binary = "^2.9.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
